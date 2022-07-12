@@ -7,4 +7,4 @@ Integrated sensors, instruments, and other devices networked with computers for 
 
 An Industrial Internet of Things (IIoT) connects systems and devices that are larger than smartphones and wireless devices. A network is used to connect industrial assets such as motors, power grids, and sensors to the cloud.
 
-The application reads data (i.e., runtime data, temperature from temperature sensors, and other base info) from Robot contriollers using the SLMP protocol and publishes these data to the MQTT Broker using an MQTT client. From the MQTT broker, the data is published on a chart for visualisation and analysis using a javascript client.
+Here, the application reads data (i.e., runtime data, temperature from temperature sensors, and other base info) from Robot contriollers using the SLMP protocol and publishes these data to the MQTT Broker using an MQTT client. From the MQTT broker, the data is published on a chart for visualisation and analysis using a javascript client.

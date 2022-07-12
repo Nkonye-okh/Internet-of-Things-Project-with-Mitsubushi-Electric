@@ -1,5 +1,5 @@
 # Internet-of-Things-Project-with-Mitsubushi-Electric
-Project invloved getting data from PLC devices (i.e., Robot controllers) and publishing data for Visualisation and analysis.
+Project invloved getting data from PLC devices (i.e., Robot controllers) and publishing data for visualisation and analysis.
 
 In information and communication technology, the Internet of Things refers to a global infrastructure that allows physical objects and virtual ones to be connected and work together.
 

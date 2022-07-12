@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IoT Web Client</title>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		
+		<!-- Minified Library of MQTT over Websockets-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+		
+		<!-- Reguired for drawing charts -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		
+		<!-- Here is our actual code included -->
+		<script src="single_asset.js"></script>
+		
+		<!-- Can be used for some addtional styles -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+		
+      
+	</head>
+
+	<body>
+		<div class="container">
+        <!-- Page Content goes here -->
+			<div class ="row">
+				<div class="col s12">
+					<div class="header">
+						<h1 id="header">Broker auf i40.mitsubishielectric.de</h1>
+					</div>
+				</div>
+			<div>
+			
+			<div class ="row">
+				<div class="col s12" id="conStatus"></div><br>
+				
+				<div class="col s12 m4">
+					<h6>Base Info</h6>
+					<p id="plcTypeTxt"></p>
+					<p id="timeZoneTxt"></p>
+					<p id="firmwareTxt"></p>
+				</div>
+				<div class="col s12 m4">
+					<h6>Status Info</h6>
+					<p id="statusInfoTxt">Text hier</p>
+				</div>
+				<div class="col s12 m4">
+					<h6>Runtime Data</h6>
+					<p id="runtimeDataTxt">Text hier</p>
+				</div>
+			</div>
+			<div class ="row">
+				<div class="col s12">
+					<canvas id="myChart"></canvas>
+				</div>
+				<div class="col s12">
+					<button onclick="clear_chart()">Clear Chart</button>
+				</div>
+			</div>
+			<div class ="row">
+				<div class="col s4">
+					<h5>Motor 1 - Temperature</h5>
+					<canvas id="myChart2"></canvas>
+				</div>
+			</div>
+		</div> <!-- Container -->
+			<script>init_chart()</script>
+
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	</body>
+</html>
